@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
 
-    <title>Yottascope | EFS1 Pitch Deck</title>
+    <title>Yottascope | Game Studio</title>
     <meta name="description" content="Yottascope is an independent game studio currently developing Escape from the School 1, a corporate horror & survival game.">
     <link rel="icon" type="image/png" href="/yottascopelogo.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yottascope.com/">
     <meta property="og:title" content="Yottascope | Game Studio">
-    <meta property="og:description" content="Developing Escape from the School 1 — A corporate horror & survival game. Planned release October 2027.">
+    <meta property="og:description" content="Developing Escape from the School 1 — A corporate horror & survival game. Planned release October 2028.">
     <meta property="og:image" content="https://yottascope.com/yottascopelogo.png">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://yottascope.com/">
     <meta property="twitter:title" content="Yottascope | Game Studio">
-    <meta property="twitter:description" content="Developing Escape from the School 1 — A corporate horror & survival game. Planned release October 2027.">
+    <meta property="twitter:description" content="Developing Escape from the School 1 — A corporate horror & survival game. Planned release October 2028.">
     <meta property="twitter:image" content="https://yottascope.com/yottascopelogo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,33 +32,33 @@
         }
 
         :root {
-            --bg: #0b0b0d;
-            --bg-secondary: #121216;
-            --card: #17171c;
-            --card-hover: #1c1c22;
-            --text: #f5f5f7;
+            --bg: #000000;
+            --bg-secondary: #000000;
+            --card: #050505;
+            --card-hover: #0a0a0a;
+            --text: #ffffff;
             --text-secondary: #a5a5ad;
             --border: rgba(255, 255, 255, 0.08);
 
-            --accent: #5865f2;
-            --accent-hover: #6d78ff;
-            --accent-soft: rgba(88, 101, 242, 0.12);
+            --accent: #00bcd4;
+            --accent-hover: #19e0ff;
+            --accent-soft: rgba(0, 217, 255, 0.08);
 
-            --shadow: rgba(0, 0, 0, 0.35);
+            --shadow: rgba(0, 0, 0, 0.55);
         }
 
         body.light {
-            --bg: #f7f7f9;
+            --bg: #ffffff;
             --bg-secondary: #ffffff;
             --card: #ffffff;
-            --card-hover: #f3f3f6;
-            --text: #18181b;
+            --card-hover: #fafafa;
+            --text: #000000;
             --text-secondary: #65656d;
             --border: rgba(0, 0, 0, 0.09);
 
-            --accent: #5865f2;
-            --accent-hover: #4752c4;
-            --accent-soft: rgba(88, 101, 242, 0.09);
+            --accent: #00bcd4;
+            --accent-hover: #00a5bd;
+            --accent-soft: rgba(0, 188, 212, 0.08);
 
             --shadow: rgba(0, 0, 0, 0.08);
         }
@@ -196,6 +196,75 @@
             transform: translateY(-1px);
         }
 
+        /* Social icons */
+        .social-icons {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            max-width: 32px;
+            min-height: 32px;
+            max-height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            background: transparent;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.78rem;
+            font-weight: 800;
+            line-height: 1;
+            transition: 0.2s ease;
+        }
+
+        .social-icon:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+            transform: translateY(-1px);
+        }
+
+        .social-icon img {
+            width: 20px;
+            height: 20px;
+            max-width: 20px;
+            max-height: 20px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .mobile-social-icons {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .social-icons {
+                display: none;
+            }
+
+            .mobile-social-icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.55rem;
+                padding: 0.75rem 0 0.25rem;
+                margin-top: 0.5rem;
+                border-top: 1px solid var(--border);
+            }
+
+            .mobile-social-icons .social-icon {
+                width: 36px;
+                height: 36px;
+            }
+        }
+
         /* Hamburger */
 
         .hamburger {
@@ -298,7 +367,7 @@
             background: var(--accent-soft);
             color: var(--accent);
 
-            border: 1px solid rgba(88, 101, 242, 0.25);
+            border: 1px solid rgba(0, 217, 255, 0.20);
 
             font-size: 0.78rem;
             font-weight: 700;
@@ -324,7 +393,7 @@
             border-radius: 28px;
 
             filter: drop-shadow(
-                0 15px 35px rgba(88, 101, 242, 0.2)
+                0 15px 35px rgba(0, 217, 255, 0.10)
             );
         }
 
@@ -391,7 +460,7 @@
 
             transform: translateY(-2px);
 
-            box-shadow: 0 8px 24px rgba(88, 101, 242, 0.22);
+            box-shadow: 0 8px 24px rgba(0, 217, 255, 0.14);
         }
 
         .btn-outline {
@@ -468,7 +537,7 @@
         .project-card:hover {
             transform: translateY(-4px);
 
-            border-color: rgba(88, 101, 242, 0.35);
+            border-color: rgba(0, 217, 255, 0.25);
 
             box-shadow: 0 20px 50px var(--shadow);
         }
@@ -494,7 +563,7 @@
 
             border-radius: 50%;
 
-            box-shadow: 0 0 10px rgba(88, 101, 242, 0.7);
+            box-shadow: 0 0 10px rgba(0, 217, 255, 0.55);
 
             animation: pulse 2s infinite;
         }
@@ -576,7 +645,7 @@
         .contact-grid {
             display: grid;
 
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: 1fr;
 
             gap: 1rem;
 
@@ -584,51 +653,45 @@
         }
 
         .contact-card {
-            min-height: 135px;
-
-            padding: 1.5rem 1rem;
-
-            background: var(--card);
-
-            border: 1px solid var(--border);
-
-            border-radius: 12px;
-
-            text-align: center;
-
+            min-height: 0;
+            width: 100%;
+            padding: 1.15rem 0;
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid var(--border);
+            border-radius: 0;
+            text-align: left;
             text-decoration: none;
-
             display: flex;
-            flex-direction: column;
-
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            gap: 2rem;
+            transition: 0.2s ease;
+        }
 
-            transition: 0.25s ease;
+        .contact-card:first-child {
+            border-top: 1px solid var(--border);
         }
 
         .contact-card:hover {
-            transform: translateY(-3px);
-
-            background: var(--card-hover);
-
-            border-color: rgba(88, 101, 242, 0.4);
+            transform: none;
+            background: var(--accent-soft);
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
         }
 
         .contact-card h4 {
             color: var(--text);
-
             font-size: 0.95rem;
-
-            margin-bottom: 0.4rem;
+            font-weight: 600;
+            margin: 0;
         }
 
         .contact-card span {
-            color: var(--accent);
-
-            font-size: 0.78rem;
-
+            color: var(--text-secondary);
+            font-size: 0.85rem;
             word-break: break-word;
+            text-align: right;
         }
 
         /* =========================
@@ -663,10 +726,6 @@
         @media (max-width: 900px) {
             .contact-grid {
                 grid-template-columns: repeat(2, 1fr);
-            }
-
-            .contact-card:last-child {
-                grid-column: span 2;
             }
         }
 
@@ -782,8 +841,17 @@
                 padding: 5rem 1.25rem;
             }
 
+            .contact-card {
+                padding: 1rem 0;
+                gap: 1rem;
+            }
+
+            .contact-card span {
+                text-align: right;
+            }
+
             .contact-grid {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
             }
         }
 
@@ -820,10 +888,6 @@
 
             .contact-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .contact-card:last-child {
-                grid-column: auto;
             }
         }
 
@@ -886,6 +950,14 @@
                         </a>
                     </li>
 
+                    <li class="mobile-social-icons" aria-label="Social links">
+                        <a class="social-icon" href="https://twitter.com/yottascopedev" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" title="X (Twitter)"><img src="social-icons/x.png" alt="" width="20" height="20"></a>
+                        <a class="social-icon" href="https://instagram.com/yottascope" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><img src="social-icons/instagram.png" alt="" width="20" height="20"></a>
+                        <a class="social-icon" href="https://tiktok.com/@yottascope" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><img src="social-icons/tiktok.png" alt="" width="20" height="20"></a>
+                        <a class="social-icon" href="https://youtube.com/@yottascope" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><img src="social-icons/youtube.png" alt="" width="20" height="20"></a>
+                        <a class="social-icon" href="https://reddit.com/u/yottascope" target="_blank" rel="noopener noreferrer" aria-label="Reddit" title="Reddit"><img src="social-icons/reddit.png" alt="" width="20" height="20"></a>
+                    </li>
+
                     <li class="mobile-controls">
 
                         <button
@@ -907,6 +979,14 @@
                     </li>
 
                 </ul>
+
+                <div class="social-icons" aria-label="Social links">
+                    <a class="social-icon" href="https://twitter.com/yottascopedev" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" title="X (Twitter)"><img src="social-icons/x.png" alt="" width="20" height="20"></a>
+                    <a class="social-icon" href="https://instagram.com/yottascope" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><img src="social-icons/instagram.png" alt="" width="20" height="20"></a>
+                    <a class="social-icon" href="https://tiktok.com/@yottascope" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><img src="social-icons/tiktok.png" alt="" width="20" height="20"></a>
+                    <a class="social-icon" href="https://youtube.com/@yottascope" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><img src="social-icons/youtube.png" alt="" width="20" height="20"></a>
+                    <a class="social-icon" href="https://reddit.com/u/yottascope" target="_blank" rel="noopener noreferrer" aria-label="Reddit" title="Reddit"><img src="social-icons/reddit.png" alt="" width="20" height="20"></a>
+                </div>
 
                 <!-- Desktop controls -->
 
@@ -1075,22 +1155,9 @@
                         Planned Launch Date:
                     </strong>
 
-                    October 28, 2027
+                    October 28, 2028
 
                 </p>
-
-                <div style="margin-top: 2rem;">
-
-                    <a
-                        href="yottascope_pitch_deck.html"
-                        class="btn"
-                        data-en="View Pitch Deck"
-                        data-tr="Tanıtım Dosyasını Görüntüle"
-                    >
-                        View Pitch Deck
-                    </a>
-
-                </div>
 
             </div>
 
@@ -1132,63 +1199,14 @@
                     </a>
 
                     <a
-                        href="https://twitter.com/yottascopedev"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contact-card"
-                    >
-                        <h4>X (Twitter)</h4>
-                        <span>@yottascopedev</span>
-                    </a>
-
-                    <a
-                        href="https://instagram.com/yottascope"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contact-card"
-                    >
-                        <h4>Instagram</h4>
-                        <span>@yottascope</span>
-                    </a>
-
-                    <a
-                        href="https://tiktok.com/@yottascope"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contact-card"
-                    >
-                        <h4>TikTok</h4>
-                        <span>@yottascope</span>
-                    </a>
-
-                    <a
-                        href="https://youtube.com/@yottascope"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contact-card"
-                    >
-                        <h4>YouTube</h4>
-                        <span>@yottascope</span>
-                    </a>
-
-                    <a
                         href="https://wa.me/905458811244"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="contact-card"
+                        aria-label="Contact Yottascope on WhatsApp"
                     >
                         <h4>WhatsApp</h4>
                         <span>+90 545 881 1244</span>
-                    </a>
-
-                    <a
-                        href="https://reddit.com/u/yottascope"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contact-card"
-                    >
-                        <h4>Reddit</h4>
-                        <span>u/yottascope</span>
                     </a>
 
                 </div>
