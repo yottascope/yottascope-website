@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
-
+Allow: /$
+Disallow: /yottascope_pitch_deck
+Disallow: /yottascope_pitch_deck/
 Sitemap: https://yottascope.com/sitemap.xml
