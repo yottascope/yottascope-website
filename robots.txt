@@ -2,4 +2,11 @@ User-agent: *
 Allow: /$
 Disallow: /yottascope_pitch_deck
 Disallow: /yottascope_pitch_deck/
+Disallow: /403
+Disallow: /admin
+Disallow: /wp-admin
+Disallow: /wp-login.php
+Disallow: /xmlrpc.php
+Disallow: /phpmyadmin
+Disallow: /cpanel
 Sitemap: https://yottascope.com/sitemap.xml
