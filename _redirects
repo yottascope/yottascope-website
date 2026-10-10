@@ -1,0 +1,12 @@
+/admin /403 302
+/admin/* /403 302
+/administrator /403 302
+/administrator/* /403 302
+/wp-admin /403 302
+/wp-admin/* /403 302
+/wp-login.php /403 302
+/xmlrpc.php /403 302
+/phpmyadmin /403 302
+/phpmyadmin/* /403 302
+/cpanel /403 302
+/cpanel/* /403 302
